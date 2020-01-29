@@ -2,7 +2,7 @@
 require 'find'
 require 'digest'
 
-base_dir = '指定文件夹'
+base_dir = 'picture_storage_path'
 sha2_map = {}
 total_delete = 0
 Find.find(base_dir) do |filename|
