@@ -49,10 +49,8 @@ class TelegramDownload(object):
                     print('This Request begin at\t' + str(before))
                     a = str('This Request begin at\t' + str(before) + '\t')
                     f.write(a)
-                    print('downloading:\t' + str(photo.id) + '\tin\t ' + str(channelNames[3]) + '\ttotal:\t' + str(
-                        len(photos)))
-                    b = str('downloading:\t' + str(photo.id) + '\tin\t' + str(channelNames[3]) + '\ttotal:\t' + str(
-                        len(photos)) + '\t')
+                    print('downloading:\t' + str(photo.id) + '\tin\t ' + str(channelNames[3]) + '\t')
+                    b = str('downloading:\t' + str(photo.id) + '\tin\t' + str(channelNames[3]) + '\t')
                     f.write(b)
                     self.client.download_media(photo, filename)
                     after = datetime.now()
@@ -85,10 +83,8 @@ class TelegramDownload(object):
                     print('This Request begin at\t' + str(before))
                     a = str('This Request begin at\t' + str(before) + '\t')
                     f.write(a)
-                    print('downloading:\t' + str(video.id) + '\tin\t ' + str(channelNames[3]) + '\ttotal:\t' + str(
-                        len(videos)))
-                    b = str('downloading:\t' + str(video.id) + '\tin\t' + str(channelNames[3]) + '\ttotal:\t' + str(
-                        len(videos)) + '\t')
+                    print('downloading:\t' + str(video.id) + '\tin\t ' + str(channelNames[3]) + '\t')
+                    b = str('downloading:\t' + str(video.id) + '\tin\t' + str(channelNames[3]) + '\t')
                     f.write(b)
                     self.client.download_media(video, filename)
                     after = datetime.now()
@@ -121,10 +117,8 @@ class TelegramDownload(object):
                     print('This Request begin at\t' + str(before))
                     a = str('This Request begin at\t' + str(before) + '\t')
                     f.write(a)
-                    print('downloading:\t' + str(PV.id) + '\tin\t ' + str(channelNames[3]) + '\ttotal:\t' + str(
-                        len(PVs)))
-                    b = str('downloading:\t' + str(PV.id) + '\tin\t' + str(channelNames[3]) + '\ttotal:\t' + str(
-                        len(PVs)) + '\t')
+                    print('downloading:\t' + str(PV.id) + '\tin\t ' + str(channelNames[3]) + '\t')
+                    b = str('downloading:\t' + str(PV.id) + '\tin\t' + str(channelNames[3]) + '\t')
                     f.write(b)
                     self.client.download_media(PV, filename)
                     after = datetime.now()
@@ -154,10 +148,8 @@ class TelegramDownload(object):
                     print('This Request begin at\t' + str(before))
                     a = str('This Request begin at\t' + str(before) + '\t')
                     f.write(a)
-                    print('downloading:\t' + str(Audio.id) + '\tin\t ' + str(channelNames[3]) + '\ttotal:\t' + str(
-                        len(Audios)))
-                    b = str('downloading:\t' + str(Audio.id) + '\tin\t' + str(channelNames[3]) + '\ttotal:\t' + str(
-                        len(Audios)) + '\t')
+                    print('downloading:\t' + str(Audio.id) + '\tin\t ' + str(channelNames[3]) + '\t')
+                    b = str('downloading:\t' + str(Audio.id) + '\tin\t' + str(channelNames[3]) + '\t')
                     f.write(b)
                     self.client.download_media(Audio, filename)
                     after = datetime.now()
@@ -190,10 +182,8 @@ class TelegramDownload(object):
                     print('This Request begin at\t' + str(before))
                     a = str('This Request begin at\t' + str(before) + '\t')
                     f.write(a)
-                    print('downloading:\t' + str(Gif.id) + '\tin\t ' + str(channelNames[3]) + '\ttotal:\t' + str(
-                        len(Gifs)))
-                    b = str('downloading:\t' + str(Gif.id) + '\tin\t' + str(channelNames[3]) + '\ttotal:\t' + str(
-                        len(Gifs)) + '\t')
+                    print('downloading:\t' + str(Gif.id) + '\tin\t ' + str(channelNames[3]) + '\t')
+                    b = str('downloading:\t' + str(Gif.id) + '\tin\t' + str(channelNames[3]) + '\t')
                     f.write(b)
                     self.client.download_media(Gif, filename)
                     after = datetime.now()
@@ -205,10 +195,5 @@ class TelegramDownload(object):
 
 
 if __name__ == '__main__':
-    # channel = 'https://t.me/futanarimaster'
     pic = TelegramDownload()
-    pic.getPhoto(channel_link=channelList.nenzu)
-    # pic.getAudio(channelList.asmr)
-    # pic.getGif(channelList.futanarimastergif3d)
-    # pic.getGif(channelList.sissyislove)
-    # pic.getPhoto(channelList.sissyislove)
+    pic.getPhoto(channel_link=channelList.link)
