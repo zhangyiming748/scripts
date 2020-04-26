@@ -92,6 +92,6 @@ def getDoc(link):
 
 if __name__ == '__main__':
     # getPicture(link=channelList.zukong)
-    getPicture(link="https://t.me/sizukon")
+    getDoc(link="https://t.me/youshengxiaoshuo")
     # getVideo(link=channelList.zukong)
     # getPicture(link=channelList.OnlyDeviant)
